@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth</title>
+</head>
+<body>
+    <!--List
+    ordered list(ol) and unordered  list(ul)-->
+    <!-- ordered List -->
+    <ol>
+        <li>Html</li>
+        <li>CSS</li>
+        <ol type="a">
+            <li>bootstrap</li>
+            <li>tailwind css</li>
+        </ol>
+        <li>Javascript</li>
+        <!--nested ordered list-->
+        <ol type="a">
+            <li>React js</li>
+            <li>next js</li>
+            <li>node js</li>
+        </ol>
+        <hr>
+        <!--Unordered list-->
+        <ul type="disc">
+            <li>Html</li>
+            <li>CSS</li>
+            <ul type="bullet">
+                <li>bootstrap</li>
+                <li>tailwind css</li>
+            </ul>
+            <li>Javascript</li>
+            <ul type="arrow">
+                <li>React js</li>
+                <li>next js</li>
+                <li>node js</li>
+            </ul>
+        </ul>
+        <hr>
+        <!--Description list
+        The <dl> tag defines a description list.
+        The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).-->
+        <dl>
+            <dt>Html</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+            <dt>Javascript</dt>
+            <dd>Programming Language for Web Development</dd>
+            <dt>React js</dt>
+        </dl>   
+        <hr>
+        <hr>
+        <!--Table
+        The <table> tag is used to represent tabular data.
+        The <table> tag is used in conjunction with <tr> (defines a row), <th> (defines a header cell), and <td> (defines a standard cell).
+            they can  also use caption for detail view of table-->    
+            <table border="1">
+                <caption>student information</caption>
+                    <tr>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>gender</th>
+                    </tr>
+                    <tr>
+                        <th>Rahul</th>
+                        <th>18</th>
+                        <th>male</th>
+                    </tr>
+                    <tr>
+                        <th>Priya</th>
+                        <th>20</th> 
+                        <th>female</th>
+                    </tr>
+                    <tr>
+                        <th>Rohan</th>
+                        <th>22</th>
+                        <th>male</th>
+            </table>
+            <hr>
+            <!--Table with colspan and rowspan
+            The colspan attribute specifies the number of columns a cell should span.
+            The rowspan attribute specifies the number of rows a cell should span.-->
+            <table border="1">
+                <caption>Student Marksheet</caption>
+                <tr>
+                    <th colspan="3">Student fully updated marksheet</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>subject</th>
+                    <th>marks</th>
+                </tr> 
+                <tr>
+                    <td rowspan="2">Rahul</td>
+                    <td>Math</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Priya</td>
+                    <td>math</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>science</td>
+                    <td>93</td>
+                </tr>
+            </table>
+            <hr>
+            <hr>
+            <!--Form
+            The <form> tag is used to create an HTML form for user input.
+            The <form> tag is used in conjunction with various input elements like <input>, <textarea>, <select>, etc.
+            The <input> tag is used to create interactive controls for web-based forms in order to accept data from the user.
+            The <textarea> tag is used to create a multi-line text input field.
+            The <select> tag is used to create a drop-down list.
+            The <option> tag is used to define options that can be selected in a drop-down list.
+            The <label> tag is used to define a label for an <input> element.
+            The <button> tag is used to create a clickable button.
+            The <fieldset> tag is used to group related elements in a form.
+            The <legend> tag is used to provide a caption for the <fieldset>.-->    
+                <!--Input tag attributes are name, value, placeholder  and required
+                many types can be used-->
+                <!--action can be used t purpose that specifies the URL to which the form data should be sent when submitted
+                default it is not specified that the form will be submitted to the current page url it can be used that server side (php python etc) for that for process the data -->
+                <form action="/submit.php">
+                    Email: <input type="text" placeholder="Enter your email" name="email" required><br>
+                    Password: <input type="password" placeholder="Enter your password" name="password" required><br>
+                    <input type="submit">
+                </form>
+                <!--name and value
+                name property id for data and its unique
+                value property are default data(they can set the data input) and all can be information submit ya sent to the server-->
+                <hr>
+                <!--label tag
+                    purpose:add to text a description to form elements
+                    for attribute:connects the label to a specific form element using the element id
+                    accessibility:makes the form can be more accessible
+                    readability:enhance forms readability and usability-->
+                    <form action="/contact.me">
+                        <label for="username">Username:</label>
+                        <input type="text" placeholder="Enter your username" name="name" id="username" required><br>
+                        <label for="userpassword">Password:</label>
+                        <input type="password" placeholder="Enter your password" name="password" id="userpassword"><br>
+                        <input type="submit">
+                    </form>
+                    <hr>
+                    <!--input type:date-->
+                    <form action="">
+                        <label for="date">Select a date:</label>
+                        <input type="date" id="date" name="date"><br>
+                        <input type="submit">
+                    </form>
+                    <hr>
+                    <!--input type:file,color,range,button-->
+                    <form action="/upload" ">
+                        <label for="file">Upload a file:</label>
+                        <input type="file" id="file" name="file"><br>
+                        <label for="color">Color:</label>
+                        <input type="color" id="color" name="color"><br>
+                        <label for="range">Select a range:</label>
+                        <input type="range" id="range" name="range" min="1" max="100"><br>  <!--range input is used to select a value from a range of values-->
+                        <label for="buttontap">click here</label>
+                        <input type="button" id="buttontap" name="buttontap" value="Click Me"><br><!--button input is used to create a clickable button that can be used to submit a form or trigger a JavaScript function-->
+                        <input type="submit"><!--submit input is used to submit the form data to the server-->
+                <hr>
+                <!--input type:radio 
+                In HTML, the <input type="radio"> element is used to let users select one option from a group of choices. Here’s a quick overview and some important points:
+                🔹 What is a Radio Button?
+                A radio button is an input element that belongs to a group where only one item can be selected at a time.
+                •type="radio": Defines the input as a radio button.
+	            •	name attribute: Groups radio buttons together. Only one option in the same group can be selected.
+	            •	value attribute: The value sent to the server when the form is submitted.
+	            •	checked attribute (optional): Pre-selects that radio button.
+                -->
+                <form>
+                    <label for="male">Male:</label>
+                    <input type="radio" value="Male" name="gender" id="male"><br>
+                    <label for="female">Female:</label>
+                    <input type="radio" value="Female" name="gender" id="female"><br>
+                    <label for="others">Others:</label>
+                    <input type="radio" value="others" name="gender" id="others"><br>
+                    <input type="submit">
+                    </form>
+                    <!--input type:checkbox
+                    In HTML, the <input type="checkbox"> element is used to create a checkbox that allows users to select one or more options from a set.-->
+                    <form>
+                        <label for="C">C</label>
+                            <input type="checkbox" name="C" value="1programming language" id="C"><br> 
+                        <label for="C++">C++</label>
+                            <input type="checkbox" name="C++" value="2programming language" id="C++"><br>
+                        <label for="python">Python</label>
+                            <input type="checkbox" name="python" value="3programming language" id="python"><br>
+                        <input type="submit">
+                    </form>
+</body>
+</html>
