@@ -193,12 +193,57 @@
                     In HTML, the <input type="checkbox"> element is used to create a checkbox that allows users to select one or more options from a set.-->
                     <form>
                         <label for="C">C</label>
-                            <input type="checkbox" name="C" value="1programming language" id="C"><br> 
+                            <input type="checkbox" name="lang" value="1programming language" id="C"><br> 
                         <label for="C++">C++</label>
-                            <input type="checkbox" name="C++" value="2programming language" id="C++"><br>
+                            <input type="checkbox" name="lang" value="2programming language" id="C++"><br>
                         <label for="python">Python</label>
-                            <input type="checkbox" name="python" value="3programming language" id="python"><br>
+                            <input type="checkbox" name="lang" value="3programming language" id="python"><br>
                         <input type="submit">
                     </form>
+                    <hr>
+                    <!--input type:select
+                    In HTML, the <select> element is used to create a drop-down list that allows users to choose one or more options from a list. 
+                    The <select> element is often used in forms to collect user input.
+                    option are use under the select command and provide the value-->
+                    <form>
+                        <label for="PL">Choose a programming language</label>
+                        <select name="language" id="PL">
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </form>
+                    <hr>
+                    <!--input type:textarea
+                    In HTML, the <textarea> element is used to create a multi-line text input field that allows users to enter larger amounts of text.
+                    The <textarea> element is often used in forms to collect user input, such as comments, feedback, or messages.
+                    The <textarea> element can be customized with attributes like rows, cols, and placeholder to control its appearance and behavior.-->
+                        <form>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="30" placeholder="Enter your message here..."></textarea><br>
+                            <input type="submit">
+                        </form>
+                    <hr>
+                    <!--iframe
+                    The <iframe> tag in HTML is used to embed another HTML document (webpage) within the current document. It stands for inline frame.
+                     attributes:
+	                •src: Specifies the URL of the page to display.
+	                •width: Defines the width of the iframe (in pixels or %).
+	                •	height: Defines the height of the iframe.
+	                •	title: Improves accessibility by describing the iframe content.
+	                •	frameborder: Specifies whether to display a border around the iframe (deprecated in HTML5).
+	                •	allowfullscreen: Allows the embedded page to be viewed in fullscreen mode.
+	                •	loading: Defines lazy loading behavior (lazy, eager).
+                	•	sandbox: Adds restrictions to the iframe content for security.
+                    iframe 
+                    src="https://www.wikipedia.org" 
+                    width="800" 
+                    height="600" 
+                    title="Wikipedia Homepage"
+                    loading="lazy"
+                    sandbox>
+                    </iframe>-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wTN1qjlMQ?si=HWdwrnZtly1-9-cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
